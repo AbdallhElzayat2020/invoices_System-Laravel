@@ -57,160 +57,42 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>1323</td>
-                                    <td>1/12/2034</td>
-                                    <td>2026/04/25</td>
-                                    <td>بنك الاهلي</td>
-                                    <td>فواتير</td>
-                                    <td>100</td>
-                                    <td>1000</td>
-                                    <td>1900</td>
-                                    <td>61</td>
-                                    <td>غير مدفوع</td>
-                                    <td>8999</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>1323</td>
-                                    <td>1/12/2034</td>
-                                    <td>2026/04/25</td>
-                                    <td>بنك الاهلي</td>
-                                    <td>فواتير</td>
-                                    <td>100</td>
-                                    <td>1000</td>
-                                    <td>1900</td>
-                                    <td>61</td>
-                                    <td>غير مدفوع</td>
-                                    <td>8999</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>1323</td>
-                                    <td>1/12/2034</td>
-                                    <td>2026/04/25</td>
-                                    <td>بنك الاهلي</td>
-                                    <td>فواتير</td>
-                                    <td>100</td>
-                                    <td>1000</td>
-                                    <td>1900</td>
-                                    <td>61</td>
-                                    <td>غير مدفوع</td>
-                                    <td>8999</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>1323</td>
-                                    <td>1/12/2034</td>
-                                    <td>2026/04/25</td>
-                                    <td>بنك الاهلي</td>
-                                    <td>فواتير</td>
-                                    <td>100</td>
-                                    <td>1000</td>
-                                    <td>1900</td>
-                                    <td>61</td>
-                                    <td>غير مدفوع</td>
-                                    <td>8999</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>1323</td>
-                                    <td>1/12/2034</td>
-                                    <td>2026/04/25</td>
-                                    <td>بنك الاهلي</td>
-                                    <td>فواتير</td>
-                                    <td>100</td>
-                                    <td>1000</td>
-                                    <td>1900</td>
-                                    <td>61</td>
-                                    <td>غير مدفوع</td>
-                                    <td>8999</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>1323</td>
-                                    <td>1/12/2034</td>
-                                    <td>2026/04/25</td>
-                                    <td>بنك الاهلي</td>
-                                    <td>فواتير</td>
-                                    <td>100</td>
-                                    <td>1000</td>
-                                    <td>1900</td>
-                                    <td>61</td>
-                                    <td>غير مدفوع</td>
-                                    <td>8999</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>1323</td>
-                                    <td>1/12/2034</td>
-                                    <td>2026/04/25</td>
-                                    <td>بنك الاهلي</td>
-                                    <td>فواتير</td>
-                                    <td>100</td>
-                                    <td>1000</td>
-                                    <td>1900</td>
-                                    <td>61</td>
-                                    <td>غير مدفوع</td>
-                                    <td>8999</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>1323</td>
-                                    <td>1/12/2034</td>
-                                    <td>2026/04/25</td>
-                                    <td>بنك الاهلي</td>
-                                    <td>فواتير</td>
-                                    <td>100</td>
-                                    <td>1000</td>
-                                    <td>1900</td>
-                                    <td>61</td>
-                                    <td>غير مدفوع</td>
-                                    <td>8999</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>1323</td>
-                                    <td>1/12/2034</td>
-                                    <td>2026/04/25</td>
-                                    <td>بنك الاهلي</td>
-                                    <td>فواتير</td>
-                                    <td>100</td>
-                                    <td>1000</td>
-                                    <td>1900</td>
-                                    <td>61</td>
-                                    <td>غير مدفوع</td>
-                                    <td>8999</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>1323</td>
-                                    <td>1/12/2034</td>
-                                    <td>2026/04/25</td>
-                                    <td>بنك الاهلي</td>
-                                    <td>فواتير</td>
-                                    <td>100</td>
-                                    <td>1000</td>
-                                    <td>1900</td>
-                                    <td>61</td>
-                                    <td>غير مدفوع</td>
-                                    <td>8999</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>1323</td>
-                                    <td>1/12/2034</td>
-                                    <td>2026/04/25</td>
-                                    <td>بنك الاهلي</td>
-                                    <td>فواتير</td>
-                                    <td>100</td>
-                                    <td>1000</td>
-                                    <td>1900</td>
-                                    <td>61</td>
-                                    <td>غير مدفوع</td>
-                                    <td>8999</td>
-                                </tr>
+                                @php
+                                    $i = 0;
+                                @endphp
+                                @foreach ($invoices as $invoice)
+                                    <tr>
+                                        @php
+                                            $i++;
+                                        @endphp
+                                        <td>{{ $i }}</td>
+                                        <td>{{ $invoice->invoice_number }} </td>
+                                        <td>{{ $invoice->invoice_Date }}</td>
+                                        <td>{{ $invoice->Due_date }}</td>
+                                        <td>{{ $invoice->product }}</td>
+                                        <td>
+                                            <a
+                                                href="{{ url('InvoicesDetails') }}/{{ $invoice->id }}">{{ $invoice->section->section_name }}</a>
+                                        </td>
+                                        <td>{{ $invoice->Discount }}</td>
+                                        <td>{{ $invoice->Rate_VAT }}</td>
+                                        <td>{{ $invoice->Value_VAT }}</td>
+                                        <td>{{ $invoice->Total }}</td>
+
+                                        <td>
+                                            @if ($invoice->Value_Status == 1)
+                                                <span class="text-success">{{ $invoice->Status }}</span>
+                                            @elseif($invoice->Value_Status == 2)
+                                                <span class="text-danger">{{ $invoice->Status }}</span>
+                                            @else
+                                                <span class="text-warning">{{ $invoice->Status }}</span>
+                                            @endif
+                                        </td>
+
+                                        <td>{{ $invoice->note }}</td>
+                                    </tr>
+                                @endforeach
+
 
                             </tbody>
                         </table>

@@ -36,7 +36,7 @@ class ProductsController extends Controller
         //     "product_name"=>$request->product_name,
         // ]);
         products::create([
-            "product_name" => $request->product_name,
+            "Product_name" => $request->Product_name,
             "description" => $request->description,
             "section_id" => $request->section_id,
         ]);

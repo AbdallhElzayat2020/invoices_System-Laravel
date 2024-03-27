@@ -10,12 +10,12 @@ class products extends Model
 {
     protected $table = "products";
     //  reailion ship  with sections Table
-    public function section(): BelongsTo
+    public function section()
     {
         return $this->belongsTo(sections::class);
     }
     protected $fillable = [
-        "product_name",
+        "Product_name",
         "description",
         "section_id",
         "section_name"

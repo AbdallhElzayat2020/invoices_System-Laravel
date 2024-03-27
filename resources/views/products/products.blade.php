@@ -71,11 +71,10 @@
                 <div class="card-header pb-0">
                     <div class="d-flex justify-content-between">
                         <div class="col-sm-4 col-md-3 col-xl-2">
-                            {{-- <a style="font-size: 20px" class="modal-effect btn btn-outline-primary btn-block"
-                                data-effect="effect-scale" data-toggle="modal" href="#modaldemo8">اضافة قسم </a> --}}
                             <button type="button" class="btn btn-primary" data-toggle="modal"
                                 data-target="#exampleModal"><i class="fas fa-plus"></i>&nbsp;
-                                اضافة منتج</button>
+                                اضافة منتج
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -97,20 +96,20 @@
                                 @foreach ($products as $product)
                                     <tr>
                                         <td>{{ $i }}</td>
-                                        <td>{{ $product->product_name }}</td>
+                                        <td>{{ $product->Product_name }}</td>
                                         <td>{{ $product->section->section_name }}</td>
                                         <td>{{ $product->description }}</td>
                                         <td>
 
                                         <td>
-                                            <button class="btn btn-primary " data-name="{{ $product->product_name }}"
+                                            <button class="btn btn-primary " data-name="{{ $product->Product_name }}"
                                                 data-pro_id="{{ $product->id }}"
                                                 data-section_name="{{ $product->section->section_name }}"
                                                 data-description="{{ $product->description }}" data-toggle="modal"
                                                 data-target="#edit_Product">تعديل</button>
 
                                             <button class="btn btn-danger  " data-pro_id="{{ $product->id }}"
-                                                data-product_name="{{ $product->product_name }}" data-toggle="modal"
+                                                data-product_name="{{ $product->Product_name }}" data-toggle="modal"
                                                 data-target="#modaldemo9">حذف</button>
                                         </td>
 
@@ -139,8 +138,8 @@
                         <div class="modal-body">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">اسم المنتج</label>
-                                <input type="text" value="{{ old('product_name') }}" class="form-control"
-                                    id="product_name" name="product_name">
+                                <input type="text" value="{{ old('Product_name') }}" class="form-control"
+                                    id="Product_name" name="Product_name">
                             </div>
 
                             <label class="my-1 mr-2" for="inlineFormCustomSelectPref">القسم</label>
@@ -226,8 +225,8 @@
                         </button>
                     </div>
                     <form action="products/destroy" method="post">
-                        @method('delete')
-                        @csrf
+                        {{ method_field('delete') }}
+                        {{ csrf_field() }}
                         <div class="modal-body">
                             <p>هل انت متاكد من عملية الحذف ؟</p><br>
                             <input type="hidden" name="pro_id" id="pro_id" value="">
@@ -269,7 +268,19 @@
     <script src="{{ URL::asset('assets/plugins/datatable/js/responsive.bootstrap4.min.js') }}"></script>
     <!--Internal  Datatable js -->
     <script src="{{ URL::asset('assets/js/table-data.js') }}"></script>
+
     <script>
+        // delete fun
+        $('#modaldemo9').on('show.bs.modal', function(event) {
+            var button = $(event.relatedTarget)
+            var pro_id = button.data('pro_id')
+            var product_name = button.data('product_name')
+            var modal = $(this)
+
+            modal.find('.modal-body #pro_id').val(pro_id);
+            modal.find('.modal-body #product_name').val(product_name);
+        })
+        // edit fun
         $('#edit_Product').on('show.bs.modal', function(event) {
             var button = $(event.relatedTarget)
             var Product_name = button.data('name')
@@ -282,17 +293,5 @@
             modal.find('.modal-body #description').val(description);
             modal.find('.modal-body #pro_id').val(pro_id);
         })
-
-
-        $('#modaldemo9').on('show.bs.modal', function(event) {
-            var button = $(event.relatedTarget)
-            var pro_id = button.data('pro_id')
-            var product_name = button.data('product_name')
-            var modal = $(this)
-
-            modal.find('.modal-body #pro_id').val(pro_id);
-            modal.find('.modal-body #product_name').val(product_name);
-        })
     </script>
-
 @endsection

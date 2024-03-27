@@ -43,7 +43,7 @@
         </script>
     @endif
 
-    {{-- @if (session('error'))
+    @if (session('error'))
         <div class="alert alert-danger alert-dismissible fade show" role="alert" id="error-alert">
             <strong>{{ session('error') }}</strong>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -55,7 +55,7 @@
                 $("#error-alert").alert('close');
             }, 5000);
         </script>
-    @endif --}}
+    @endif
 
     <!-- row -->
     <div class="row">
@@ -93,17 +93,18 @@
                         <div class="row">
                             <div class="col">
                                 <label for="inputName" class="control-label">القسم</label>
-                                <select name="Section" class="form-control SlectBox" onclick="console.log($(this).val())"
+                                <select name="Section" class="form-select SlectBox" onclick="console.log($(this).val())"
                                     onchange="console.log('change is firing')">
                                     <!--placeholder-->
                                     <option value="" selected disabled>حدد القسم</option>
                                     @foreach ($sections as $section)
-                                        <option value="{{ $section->id }}"> {{ $section->section_name }}</option>
+                                        <option style="width: 600px; max-width: 100%;" value="{{ $section->id }}">
+                                            {{ $section->section_name }}</option>
                                     @endforeach
                                 </select>
                             </div>
 
-                            <div class="col">
+                            <div class="col ">
                                 <label for="inputName" class="control-label">المنتج</label>
                                 <select id="product" name="product" class="form-control">
                                 </select>

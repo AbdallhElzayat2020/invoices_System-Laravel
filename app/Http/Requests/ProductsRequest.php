@@ -22,14 +22,14 @@ class ProductsRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'product_name' => 'required|unique:products|max:255',
+            'Product_name' => 'required|unique:products|max:255',
             'section_id' => 'required',
         ];
     }
     public function messages(): array
     {
         return [
-            'product_name.required' => 'لا يمكن ترك اسم المنتج فارغا',
+            'Product_name.required' => 'لا يمكن ترك اسم المنتج فارغا',
             'section_id.required' => 'لابد من اختيار قسم لا يمكن تركة فارغا',
         ];
     }

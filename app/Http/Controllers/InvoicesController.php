@@ -14,7 +14,8 @@ class InvoicesController extends Controller
      */
     public function index()
     {
-        return view("invoices.invoices");
+        $invoices = invoices::all();
+        return view('invoices.invoices', compact('invoices'));
     }
 
     /**
@@ -23,7 +24,10 @@ class InvoicesController extends Controller
     public function create()
     {
         $sections = sections::all();
+        // $invoices = invoices::all();
         return view("invoices.add_invoice", compact("sections"));
+        session()->flash('success', 'تم اضافة الفاتورة بنجاح');
+        return back();
     }
 
     /**
@@ -36,17 +40,15 @@ class InvoicesController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(invoices $invoices)
+    public function show()
     {
-        //
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(invoices $invoices)
+    public function edit($id)
     {
-        //
     }
 
     /**
@@ -64,6 +66,7 @@ class InvoicesController extends Controller
     {
         //
     }
+
     public function getproducts($id)
     {
         $products = DB::table("products")->where("section_id", $id)->pluck("Product_name", "id");
